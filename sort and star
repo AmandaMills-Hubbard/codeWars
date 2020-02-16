@@ -5,9 +5,9 @@ The returned value must be a string, and have "***" between each of its letters.
 You should not remove or add elements from/to the array.
 
 function twoSort(s) {
-  var end = s.sort()[0];
-  var a = end[0];
-  for(var i = 1; i < last.length; i++) {
+  var end =s.sort()[0];
+  var a =end[0];
+  for (var i = 1; i < end.length; i++) {
     a += "***" + end[i];
   }
   return a;

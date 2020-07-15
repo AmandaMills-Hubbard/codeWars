@@ -1,0 +1,21 @@
+##Build a function that will take an array of filenames (as string) and return an array of array. Each array will provide 3 informations about the image file: the full filename, its name and the extension. (See the example below)
+
+#Detect the image files based on the end of the filename which is their format (extension).
+#Image files are defined as jpg, gif, png, tiff, svg and bmp. So "puppies.jpg" is a image file while "puppies.html" is not.
+
+function imageFilter(arr) {
+
+}
+P: array of strings containig file names
+
+R: should retun array with image files names broken down into "name", "extension" and non image files returned as null
+
+E: imageFilter(["index.html", "favicon.gif"])
+return [null, ["favicon.gif", "favicon", "gif"]]
+
+P:
+1)loop through array and check which strings are img files
+2) if not img file add to new array as null 
+3) if string is an img file add original string to new array
+3a) strip string (imgName .extension) add pieces to new array
+4) return new array

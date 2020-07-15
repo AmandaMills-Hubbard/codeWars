@@ -1,0 +1,27 @@
+# LeetCode
+Instructions: Given two binary trees and imagine that when you put one of them to cover the other,
+some nodes of the two trees are overlapped while the others are not.
+
+You need to merge them into a new binary tree. The merge rule is that if two nodes overlap,
+then sum node values up as the new value of the merged node. Otherwise,
+the NOT null node will be used as the node of new tree.
+
+var mergeTrees = function(t1, t2) {
+    
+    //verify that there are no falsy values
+    if (t1 !== true && t2 !== true) return null;
+    
+    // if t2 and t1 are truthy merge the left side of the array 
+    root.left = mergeTreesL;
+    mergeTreesL(t1 && t1.left);
+    mergeTreesL(t2 && t2.left);
+    
+    // if t2 and t1 are truthy merge the right side of the array
+    root.right = mergeTreesR;
+    mregeTreesR(t1 && t1.right);
+    mergeTreesR(t2 && t2.right);
+    //add the new left and right sides of the array together
+    const mRoot = mergeTreesR + mergeTreesL;
+    return mRoot;
+    
+};
